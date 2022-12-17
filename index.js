@@ -86,3 +86,23 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+console.log("Financial Analysys");
+console.log("--------------------------");
+
+let length = finances.length;
+console.log("Total Months: " + length);  // displays the total number of months included in the dataset
+
+// The net total amount of Profit/Losses over the entire period below
+
+// create a loop that sums up every second element of the arrays within array
+
+var sumFinances = 0;
+
+for (var i = 0; i < finances.length; i++) {
+    sumFinances += finances[i][1];
+}
+
+console.log("Total: $" + sumFinances);
+
+// The greatest increase in profits (date and amount) over the entire period
