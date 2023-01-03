@@ -17,4 +17,18 @@ The code analyzes the records to calculate each of the following:
 ## Installation
 
 After opening this url: https://pav85.github.io/console-finances/ you should see this:
-![console-finances]()
+![console-finances](Screenshot%20challenge%204.png)
+
+## Usage 
+
+Open the console to see the solution
+
+## Credits
+
+N/A
+
+## Licence
+
+MIT Licence
+
+
