@@ -108,13 +108,16 @@ console.log("Total: $" + sumFinances);
 
 // The average of the changes in Profit/Losses over the entire period
 
+var average = 0;
 
+for (var i = 0; i < finances.length; i++) {
+    average = (finances[i][1] - finances[i-i][1]) / (finances.length - 1)
+};
 
-
+console.log("Average Change: $" + average);
 
 
 // The greatest increase in profits (date and amount) over the entire period
-
 
 
 
