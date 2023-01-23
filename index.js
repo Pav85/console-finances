@@ -96,7 +96,7 @@ let length = finances.length;
 console.log("Total Months: " + length);  
 
 
-// The net total amount of Profit/Losses over the entire period
+// The net total amount of Profit/Losses over the entire period below
 
 var sumFinances = 0;
 
@@ -106,7 +106,7 @@ for (var i = 0; i < finances.length; i++) {
 
 console.log("Total: $" + sumFinances);
 
-// The average of the changes in Profit/Losses over the entire period
+// The average of the changes in Profit/Losses over the entire period below
 
 var average = 0;
 
@@ -118,10 +118,6 @@ console.log("Average Change: $" + average.toFixed(2));
 
 
 // The greatest increase in profits (date and amount) over the entire period
-
-// loop throught the array of finances
-// find the greatest increase in profits 
-// print result in the console
 
 var greatestIncreaseInProfits = 0;
 var greatestIncreaseMonth;
