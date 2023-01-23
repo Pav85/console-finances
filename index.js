@@ -96,7 +96,7 @@ let length = finances.length;
 console.log("Total Months: " + length);  
 
 
-// The net total amount of Profit/Losses over the entire period
+// The net total amount of Profit/Losses over the entire period below
 
 var sumFinances = 0;
 
@@ -106,7 +106,7 @@ for (var i = 0; i < finances.length; i++) {
 
 console.log("Total: $" + sumFinances);
 
-// The average of the changes in Profit/Losses over the entire period
+// The average of the changes in Profit/Losses over the entire period below
 
 var average = 0;
 
@@ -114,14 +114,37 @@ for (var i = 0; i < finances.length; i++) {
     average = (finances[i][1] - finances[i-i][1]) / (finances.length - 1)
 };
 
-console.log("Average Change: $" + average);
+console.log("Average Change: $" + average.toFixed(2));
 
 
 // The greatest increase in profits (date and amount) over the entire period
 
+var greatestIncreaseInProfits = 0;
+var greatestIncreaseMonth;
 
 
+for (var i = 1; i < finances.length; i++) {
+   if ((finances[i][1] - finances[i-1][1]) > greatestIncreaseInProfits) {
+    greatestIncreaseInProfits = finances[i][1] - finances[i-1][1];
+    greatestIncreaseMonth = finances[i][0];
+   };
+};
+
+
+console.log("Greatest increase in profits was in: " + greatestIncreaseMonth+ " $" + greatestIncreaseInProfits);
 
 
 
 // The greatest decrease in profits (date and amount) over the entire period
+
+var greatestDecreaseInProfits = 0;
+var greatestDecreaseMonth;
+
+for (var i = 1; i < finances.length; i++) {
+    if ((finances[i][1] - finances[i-1][1]) < greatestDecreaseInProfits) {
+        greatestDecreaseInProfits = finances[i][1] - finances[i-1][1];
+        greatestDecreaseMonth = finances[i][0];
+    };
+};
+
+console.log("Greatest decrease in profits was in: " + greatestDecreaseMonth + " $"  + greatestDecreaseInProfits);
