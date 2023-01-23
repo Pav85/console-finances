@@ -17,11 +17,13 @@ The code analyzes the records to calculate each of the following:
 ## Installation
 
 After opening this url: https://pav85.github.io/console-finances/ you should see this:
-![console-finances](Screenshot%20challenge%204.png)
+![console-finances](./Assets/Images/Screenshot%20challenge%204.png)
+
+GitHub Repository URL: https://github.com/Pav85/console-finances
 
 ## Usage 
 
-Open the console to see the solution
+Open the console to see the solution !!!
 
 ## Credits
 
