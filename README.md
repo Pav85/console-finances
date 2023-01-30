@@ -1,5 +1,3 @@
-# Week 3 Edx Bootcamp challenge 
-
 # console-finances
 
 ## Description 
